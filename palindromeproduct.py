@@ -5,7 +5,7 @@ def numberOfDigits(n):
         return 1 + numberOfDigits(n/10)
     
 def getPlaceDigit(n, place):
-    if(numberOfDigits(n) < place):
+    if(numberOfDigits(n)  < place):
         return 0
     else:
         x = (n / (10**(place-1))) % 10
